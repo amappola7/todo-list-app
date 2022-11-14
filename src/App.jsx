@@ -6,23 +6,24 @@ import {
   ToDoItem,
   CreateToDoButton
 } from './components/components.js';
+import './App.css'
 
 const todos=[
   {text:'Cortar cebolla', completed:false},
-  {text:'Tormar el curso de intro a react', completed:false},
+  {text:'Tomar el curso de intro a react', completed:false},
   {text:'Llorar con la llorona', completed:false}
 ];
 
 function App() {
   return (
-    <Fragment>
+    <div>
       <ToDoCounter/>
       <ToDoSearch/>
       <ToDoList>
         {todos.map(todo => (<ToDoItem key={todo.text} text={todo.text}/>))}
       </ToDoList>
       <CreateToDoButton/>
-    </Fragment>
+    </div>
   )
 }
 

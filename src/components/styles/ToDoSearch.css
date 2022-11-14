@@ -1,0 +1,23 @@
+:root {
+  --main-font-family: 'Quicksand', sans-serif ;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  width: 30rem;
+  border: solid black 0.2rem;
+  border-radius: 2rem;
+  font-family: var(--main-font-family);
+  font-size: 1.6rem;
+  margin: 1rem;
+  padding: 1rem;
+}
