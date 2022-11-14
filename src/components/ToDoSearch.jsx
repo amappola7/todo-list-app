@@ -2,7 +2,7 @@ import React from 'react';
 
 function ToDoSearch() {
   return (
-    <p>Hola</p>
+    <input placeholder='Search your To Do' type='text'/>
   );
 }
 

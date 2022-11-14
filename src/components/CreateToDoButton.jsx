@@ -2,7 +2,7 @@ import React from 'react';
 
 function CreateToDoButton() {
   return (
-    <p>Hola</p>
+    <button><i className="fa-solid fa-plus"></i></button>
   );
 }
 

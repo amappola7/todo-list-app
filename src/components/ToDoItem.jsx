@@ -1,8 +1,12 @@
 import React from 'react';
 
-function ToDoItem() {
+function ToDoItem(props) {
   return (
-    <p>Hola</p>
+    <li>
+      <span><i className="fa-solid fa-check"></i></span>
+      <p>{props.text}</p>
+      <span><i className="fa-solid fa-xmark"></i></span>
+    </li>
   );
 }
 
