@@ -1,15 +1,17 @@
 import React from 'react';
 import './styles/ToDoSearch.css'
 
-function ToDoSearch() {
+function ToDoSearch({searchValue, setSearchValue}) {
   const onSearchValueChange = (event) => {
     console.log(event.target.value)
+    setSearchValue(event.target.value);
   }
 
   return (
     <input
       placeholder='Search your To Do'
       type='text'
+      value={searchValue}
       onChange={onSearchValueChange}
     />
   );

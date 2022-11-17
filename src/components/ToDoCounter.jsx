@@ -2,9 +2,9 @@ import React from 'react';
 import './styles/ToDoCounter.css'
 
 
-function ToDoCounter() {
+function ToDoCounter(props) {
   return (
-    <h1>You have completed {} of {} To Do</h1>
+    <h1>You have completed {props.completedToDos} of {props.pendingToDos} To Do's</h1>
   );
 }
 
