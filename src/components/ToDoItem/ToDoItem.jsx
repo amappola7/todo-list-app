@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/ToDoItem.css'
+import './ToDoItem.css'
 
 function ToDoItem(props) {
   const onComplete = () => alert(`You have completed ${props.text}`);

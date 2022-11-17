@@ -5,7 +5,7 @@ import {
   ToDoList,
   ToDoItem,
   CreateToDoButton
-} from './components/components.js';
+} from '../components.js';
 import './App.css'
 
 const defaultTodos=[
