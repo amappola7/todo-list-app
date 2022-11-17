@@ -1,12 +1,5 @@
 import { Fragment , useState} from 'react';
-import {
-  ToDoCounter,
-  ToDoSearch,
-  ToDoList,
-  ToDoItem,
-  CreateToDoButton
-} from '../components.js';
-import './App.css'
+import { AppUI } from './AppUI'
 
 const defaultTodos=[
   {text:'Cortar cebolla', completed:false},
@@ -32,14 +25,14 @@ function App() {
   }
 
   return (
-    <div>
-      <ToDoCounter pendingToDos={toDoList.length} completedToDos={completedToDos}/>
-      <ToDoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-      <ToDoList>
-        {searchedToDos.map(todo => (<ToDoItem key={todo.text} text={todo.text}/>))}
-      </ToDoList>
-      <CreateToDoButton/>
-    </div>
+    <AppUI
+    searchValue={searchValue}
+    setSearchValue={setSearchValue}
+    toDoList={toDoList}
+    setToDoList={setToDoList}
+    searchedToDos={searchedToDos}
+    completedToDos={completedToDos}
+    />
   )
 }
 
